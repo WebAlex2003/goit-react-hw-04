@@ -69,9 +69,15 @@ const App = () => {
       <SearchBar onSubmit={handleSearch} />
       {loading && <Loader />}
       {error && <ErrorMessage />}
-      {images.length > 0 && <ImageGellery images={images} onImageClick={openModal} />}
+      {images.length > 0 && (
+        <ImageGellery images={images} onImageClick={openModal} />
+      )}
       {images.length > 0 && <LoadMoreBtn onClick={handleMoreLoad} />}
-      <ImageModal onClose={closeModal} isOpen={modalIsOpen} image={currentImage} />
+      <ImageModal
+        onClose={closeModal}
+        isOpen={modalIsOpen}
+        image={currentImage}
+      />
       <Toaster />
     </div>
   );

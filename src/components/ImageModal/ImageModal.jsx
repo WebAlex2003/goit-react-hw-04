@@ -1,5 +1,5 @@
 import Modal from "react-modal";
-import css from "./ImageModal.module.css"
+import css from "./ImageModal.module.css";
 
 const ImageModal = ({ onClose, isOpen, image }) => {
   const customStyles = {
@@ -15,10 +15,10 @@ const ImageModal = ({ onClose, isOpen, image }) => {
 
   return (
     <Modal isOpen={isOpen} onRequestClose={onClose} style={customStyles}>
-      <button onClick={onClose} >x</button>
       {image && (
         <div>
-          <img className={css.modalButton}
+          <img
+            className={css.modalImg}
             src={image.urls.regular}
             alt={image.alt_description}
           />
