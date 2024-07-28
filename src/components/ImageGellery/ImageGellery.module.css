@@ -1,0 +1,9 @@
+.imageList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.imageItem {
+    width: 360px;
+}

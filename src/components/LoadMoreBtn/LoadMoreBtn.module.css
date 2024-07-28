@@ -1,0 +1,11 @@
+.loadButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+
+  background-color: rgb(25, 25, 197);
+  color: white;
+
+  border-radius: 5px;
+  border: none;
+}
