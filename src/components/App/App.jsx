@@ -1,4 +1,4 @@
-import ImageGellery from "../ImageGellery/ImageGellery";
+import ImageGallery from "../ImageGallery/ImageGallery";
 import SearchBar from "../SearchBar/SearchBar";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import Loader from "../Loader/Loader";
@@ -34,6 +34,7 @@ const App = () => {
       return;
     }
     setImages([]);
+    setPage(1)
     setTopic(newImages);
   };
 
@@ -70,7 +71,7 @@ const App = () => {
       {loading && <Loader />}
       {error && <ErrorMessage />}
       {images.length > 0 && (
-        <ImageGellery images={images} onImageClick={openModal} />
+        <ImageGallery images={images} onImageClick={openModal} />
       )}
       {images.length > 0 && <LoadMoreBtn onClick={handleMoreLoad} />}
       <ImageModal

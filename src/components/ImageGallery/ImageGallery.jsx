@@ -1,7 +1,7 @@
 import ImageCard from "../ImageCard/ImageCard";
-import css from "./ImageGellery.module.css"
+import css from "./ImageGallery.module.css"
 
-const ImageGellery = ({ images, onImageClick}) => {
+const ImageGallery = ({ images, onImageClick}) => {
   return (
     <ul className={css.imageList}>
       {images.map((image) => (
@@ -13,4 +13,4 @@ const ImageGellery = ({ images, onImageClick}) => {
   );
 };
 
-export default ImageGellery;
+export default ImageGallery;
